@@ -43,11 +43,12 @@ img {
  */
 button {
     /* Cores e Aparência */
+    align-items: center;
     font-family: 'Roboto';
     background-color: #ff009d56; /* Rosa */
     color: #333;
     border: none;
-    padding: 15px 30px;
+    padding: 30px;
     
     /* Texto */
     align-items: center;
