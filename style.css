@@ -49,6 +49,7 @@ button {
     padding: 15px 30px;
     
     /* Texto */
+    align-items: center;
     font-size: 1.2em;
     font-weight: 700;
     text-transform: uppercase;
