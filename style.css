@@ -44,7 +44,8 @@ img {
 button {
     /* Cores e Aparência */
     display: block;
-    text-align: center;
+    width: fit-content;
+    margin: 0 auto;
     font-family: 'Roboto';
     background-color: #ff009d56; /* Rosa */
     color: #333;
