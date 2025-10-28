@@ -29,7 +29,7 @@ h1 {
 img {
     /* Define um tamanho máximo para a imagem */
     align-items: center;
-    max-width: 90%; 
+    max-width: 60%; 
     height: auto;
     
     /* Adiciona bordas arredondadas e uma sombra para destaque */
@@ -43,7 +43,8 @@ img {
  */
 button {
     /* Cores e Aparência */
-    background-color: #ffd700; /* Dourado */
+    font-family: 'Roboto';
+    background-color: #ff009d56; /* Rosa */
     color: #333;
     border: none;
     padding: 15px 30px;
