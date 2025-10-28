@@ -1,13 +1,67 @@
-body{
-    font-family: 'Roboto';
-    background-color: rgb(248, 238, 223);
+body {
+    /* Centralização horizontal do conteúdo inline */
+    text-align: center; 
+    
+    /* Fontes importadas */
+    font-family: 'Outfit', sans-serif;
+    
+    /* Fundo suave e altura mínima para melhor visualização */
+    background-color: #f0f8ff; /* Azul clarinho */
+    padding-top: 50px;
+    min-height: 100vh;
 }
 
-img{
-    align-items: center;
-    justify-items: right;
+/*
+ * ESTILIZAÇÃO DO TÍTULO
+ */
+h1 {
+    color: #ff69b4; /* Rosa Choque */
+    margin-bottom: 30px;
+    font-size: 2.2em;
+    max-width: 80%; /* Para quebrar a linha em telas menores */
+    margin-left: auto;
+    margin-right: auto;
 }
-h1{
-    color: red;
-    text-align: center;
+
+/*
+ * ESTILIZAÇÃO DA IMAGEM
+ */
+img {
+    /* Define um tamanho máximo para a imagem */
+    max-width: 90%; 
+    height: auto;
+    
+    /* Adiciona bordas arredondadas e uma sombra para destaque */
+    border-radius: 15px; 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    
+    margin-bottom: 40px; /* Espaço entre a imagem e o botão */
+}
+
+/*
+ * ESTILIZAÇÃO DO BOTÃO
+ */
+button {
+    /* Cores e Aparência */
+    background-color: #ffd700; /* Dourado */
+    color: #333;
+    border: none;
+    padding: 15px 30px;
+    
+    /* Texto */
+    font-size: 1.2em;
+    font-weight: 700;
+    text-transform: uppercase;
+    
+    /* Efeitos Visuais */
+    border-radius: 50px; /* Botão arredondado */
+    cursor: pointer;
+    transition: all 0.3s ease; /* Transição suave para o hover */
+}
+
+/* Efeito ao passar o mouse */
+button:hover {
+    background-color: #ffb84d; /* Laranja mais vibrante */
+    transform: scale(1.05); /* Faz o botão crescer um pouco */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
