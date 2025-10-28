@@ -28,14 +28,14 @@ h1 {
  */
 img {
     /* Define um tamanho máximo para a imagem */
+    align-items: center;
     max-width: 90%; 
     height: auto;
     
     /* Adiciona bordas arredondadas e uma sombra para destaque */
     border-radius: 15px; 
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-    
-    margin-bottom: 40px; /* Espaço entre a imagem e o botão */
+    margin-bottom: 100px; /* Espaço entre a imagem e o botão */
 }
 
 /*
