@@ -39,5 +39,52 @@
                 Seu pai corintiano e fã número 1 de você! <span class="coracao">❤️</span>
             </div>
         </div>
-    </div></body>
+    </div>
+    <!-- Áudio do Hino do Corinthians -->
+<audio id="hinoCorinthians" loop>
+    <source src="hino-corinthians.mp3" type="audio/mpeg">
+</audio>
+
+<!-- Controle de áudio -->
+<div class="audio-control" id="audioControl">
+    <span id="audioIcon">🔊</span>
+    <span id="audioText">Hino do Corinthians</span>
+</div>
+
+<script>
+    const audio = document.getElementById('hinoCorinthians');
+    const audioControl = document.getElementById('audioControl');
+    const audioIcon = document.getElementById('audioIcon');
+    const audioText = document.getElementById('audioText');
+    let isPlaying = false;
+
+    // Tentar reproduzir automaticamente quando a página carregar
+    window.addEventListener('load', () => {
+        audio.play().then(() => {
+            isPlaying = true;
+            audioIcon.textContent = '🔊';
+            audioText.textContent = 'Pausar';
+        }).catch(() => {
+            // Se não conseguir reproduzir automaticamente, mostrar botão para clicar
+            audioIcon.textContent = '🔇';
+            audioText.textContent = 'Clique para ouvir';
+        });
+    });
+
+    // Controle de play/pause ao clicar
+    audioControl.addEventListener('click', () => {
+        if (isPlaying) {
+            audio.pause();
+            audioIcon.textContent = '🔇';
+            audioText.textContent = 'Tocar Hino';
+            isPlaying = false;
+        } else {
+            audio.play();
+            audioIcon.textContent = '🔊';
+            audioText.textContent = 'Pausar';
+            isPlaying = true;
+        }
+    });
+</script>
+</body>
 </html>
