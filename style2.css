@@ -1,1 +1,40 @@
+body {
+    /* Centralização horizontal do conteúdo inline */
+    text-align: center; 
+    
+    /* Fontes importadas */
+    font-family: 'Outfit', sans-serif;
+    
+    /* Fundo suave e altura mínima para melhor visualização */
+    background-color: #f0f8ff; /* Azul clarinho */
+    padding-top: 50px;
+    min-height: 100vh;
+}
 
+/*
+ * ESTILIZAÇÃO DO TÍTULO
+ */
+h1 {
+    font-family: 'Outfit', sans-serif;
+    color: #ff69b4; /* Rosa Choque */
+    margin-bottom: 30px;
+    font-size: 2.2em;
+    max-width: 80%; /* Para quebrar a linha em telas menores */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*
+ * ESTILIZAÇÃO DA IMAGEM
+ */
+img {
+    /* Define um tamanho máximo para a imagem */
+    align-items: center;
+    max-width: 60%; 
+    height: auto;
+    
+    /* Adiciona bordas arredondadas e uma sombra para destaque */
+    border-radius: 15px; 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    margin-bottom: 100px; /* Espaço entre a imagem e o botão */
+}
